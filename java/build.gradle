@@ -1,0 +1,35 @@
+plugins {
+    id 'java'
+    id "info.solidsoft.pitest" version "1.7.0"
+}
+
+group 'org.tdd.katas'
+version '1.0-SNAPSHOT'
+
+compileJava {
+    sourceCompatibility = "11"
+    targetCompatibility = "11"
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.2'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.2'
+}
+
+test {
+    useJUnitPlatform()
+    maxParallelForks = 5
+}
+
+pitest {
+    junit5PluginVersion = '0.15'
+    targetClasses = ['org.tdd.katas.*']
+    threads = 5
+    timestampedReports = true
+    outputFormats = ['HTML']
+    timeoutConstInMillis = 5000
+}
