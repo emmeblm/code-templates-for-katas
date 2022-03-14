@@ -12,10 +12,10 @@ To install all dependencies run:
 npm install
 ```
 
-Build (clean, lint, and transpile):
+Lint:
 
 ```bash
-npm run build
+npm run lint
 ```
 
 Run tests:

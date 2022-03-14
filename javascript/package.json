@@ -1,0 +1,29 @@
+{
+  "name": "javascript-code-template-for-katas",
+  "version": "0.0.1",
+  "description": "Kata code template using Javascript.",
+  "keywords": [
+    "nodejs"
+  ],
+  "main": "src/index.js",
+  "type": "module",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "clean": "(rm -r ./.stryker-tmp || true) && (rm -r ./reports || true)",
+    "clean:all": "npm run clean && (rm -r ./node_modules || true)",
+    "mutation:coverage": "npx stryker run",
+    "lint": "eslint --fix src/**/*.js test/**/*.js",
+    "test": "mocha",
+    "upgrade": "npx npm-check -u"
+  },
+  "devDependencies": {
+    "@stryker-mutator/core": "~5.6.0",
+    "@stryker-mutator/mocha-runner": "^5.6.1",
+    "chai": "^4.1.2",
+    "eslint": "^8.2.0",
+    "mocha": "^9.0.0",
+    "source-map-support": "^0.5.12"
+  }
+}
