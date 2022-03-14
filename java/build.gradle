@@ -3,7 +3,7 @@ plugins {
     id "info.solidsoft.pitest" version "1.7.0"
 }
 
-group 'org.tdd.katas'
+group 'org.katas'
 version '1.0-SNAPSHOT'
 
 compileJava {
@@ -27,7 +27,7 @@ test {
 
 pitest {
     junit5PluginVersion = '0.15'
-    targetClasses = ['org.tdd.katas.*']
+    targetClasses = ['org.katas.*']
     threads = 5
     timestampedReports = true
     outputFormats = ['HTML']
