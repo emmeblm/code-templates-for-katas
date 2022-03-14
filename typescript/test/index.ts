@@ -1,13 +1,13 @@
 'use strict';
 
 import { expect } from 'chai';
-import { RomanNumerals } from '../src';
+import { Kata } from '../src';
 
-describe('RomanNumerals class', () => {
+describe('Kata class', () => {
 
 	it('should return hello!', () => {
-		const romanNumerals: RomanNumerals = new RomanNumerals();
-		const returnValue: string = romanNumerals.deleteMe();
+		const kata: Kata = new Kata();
+		const returnValue: string = kata.deleteMe();
 
 		expect(returnValue).to.equal('hello!');
 	});

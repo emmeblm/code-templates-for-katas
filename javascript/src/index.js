@@ -1,6 +1,5 @@
 'use strict';
 
-
 class Kata {
   deleteMe() {
     return 'hello!';

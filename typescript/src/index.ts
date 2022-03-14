@@ -1,6 +1,6 @@
 'use strict';
 
-export class RomanNumerals {
+export class Kata {
 
 	public deleteMe(): string {
 		return 'hello!';

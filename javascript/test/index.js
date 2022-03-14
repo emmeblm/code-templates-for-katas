@@ -4,7 +4,7 @@ const expect = require('chai').expect;
 var { describe, it } = require('mocha');
 const Kata = require('../src/index');
 
-describe('Unit tests', function() {
+describe('Kata class', function() {
 
 	it('should return hello!', function() {
     var kata = new Kata();
