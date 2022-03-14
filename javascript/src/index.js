@@ -1,7 +1,10 @@
 'use strict';
 
-function deleteMe() {
-  return 'hello!';
+
+class Kata {
+  deleteMe() {
+    return 'hello!';
+  }
 }
 
-export { deleteMe };
+module.exports = Kata;

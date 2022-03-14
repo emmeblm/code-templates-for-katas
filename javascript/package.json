@@ -6,7 +6,6 @@
     "nodejs"
   ],
   "main": "src/index.js",
-  "type": "module",
   "directories": {
     "test": "test"
   },
