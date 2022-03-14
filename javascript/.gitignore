@@ -1,0 +1,10 @@
+# Generated directories:
+reports/
+dist/
+node_modules/
+.idea/
+
+# Project files:
+*.sublime-*
+# stryker temp files
+.stryker-tmp
