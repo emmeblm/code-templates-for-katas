@@ -1,7 +1,7 @@
 {
-  "name": "roman-numerals-tdd-kata",
+  "name": "typescript-code-template-for-katas",
   "version": "0.0.1",
-  "description": "Roman Numerals TDD Kata solution using TypeScript.",
+  "description": "Kata code template using TypeScript.",
   "keywords": [
     "typescript"
   ],
