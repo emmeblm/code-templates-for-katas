@@ -16,7 +16,7 @@
     "clean:all": "npm run clean && (rm -r ./node_modules || true)",
     "mutation:coverage": "npx stryker run",
     "lint": "eslint --ext .ts --fix src/**/*.ts test/**/*.ts",
-    "test": "mocha",
+    "test": "mocha --reporter nyan",
     "upgrade": "npx npm-check -u"
   },
   "devDependencies": {
